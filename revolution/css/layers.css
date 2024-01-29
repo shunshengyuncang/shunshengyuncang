@@ -5863,7 +5863,11 @@ tp-caption.Team-Thumb,
 
         display: inline-block;
           /* 或者使用display: block */
-          padding: 5px;
+          
+          padding-left: 5px;
+          padding-top: 5px;
+          padding-bottom: 0%;
+          padding-right: 5px;
           /* 根据需求自定义padding值 */
           
 
