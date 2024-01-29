@@ -25,7 +25,16 @@ body,html,#map_container {
 </body>
 </html>
 <script type="text/javascript">
-  
+  var tileLayer = new BMap.TileLayer();
+    tileLayer.getTilesUrl = function (tileCoord, zoom) {
+      var x = tileCoord.x;
+      var y = tileCoord.y;
+      return 'tiles/' + zoom + '/tile-' + x + '_' + y + '.png';
+    }
+    var map = new BMap.MapType('map', tileLayer, { minZoom: 10, maxZoom: 19 });
+    // var map = new BMap.Map('map', { mapType: MyMap });
+    // map.addControl(new BMap.NavigationControl());
+    // map.centerAndZoom(new BMap.Point(113.37166595459, 23.3518314361572), 19);
 
   
 
@@ -39,8 +48,8 @@ map.enableScrollWheelZoom();                  // 启用滚轮放大缩小。
 map.enableKeyboard();                         // 启用键盘操作。  
 map.setCurrentCity("广州");          // 设置地图显示的城市 此项是必须设置的
 
-map.setMinZoom(10);
-map.setMaxZoom(19);
+// map.setMinZoom(10);
+// map.setMaxZoom(19);
 
 
   
