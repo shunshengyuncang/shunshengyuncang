@@ -93,7 +93,7 @@ $(document).ready(function() {
     setColor: function(e) {
         var t = switchColor.colorObj;
         $.cookie(t.colorCookie, e);
-        $(t.headLink).attr("href", "stylesheets/colors/" + e + ".css");
+        $(t.headLink).attr("href", "stylesheets/colors/" + e + ".css?v=2024.01.30.01");
         $("#logo img").attr("src", "images/logo"+e.match(/\d+/)+".png");
         $("#logo-footer img").attr("src", "images/logofooter"+e.match(/\d+/)+".png"); 
         $(t.switchClass).removeClass(t.currentClass);
