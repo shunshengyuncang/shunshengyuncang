@@ -5859,7 +5859,7 @@ tp-caption.Team-Thumb,
     background-color: rgba(255, 255, 255, 0.8);
       /* padding: 10px; */
       /* 字体描边 */
-      /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 
         display: inline-block;
           /* 或者使用display: block */
